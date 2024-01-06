@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-javaweb3-deployment
+  name: k8s-javaweb3-deployment-689bdb757c-pmqvl, k8s-javaweb3-deployment-689bdb757c-q6htw
 spec:
   replicas: 2
   selector:
