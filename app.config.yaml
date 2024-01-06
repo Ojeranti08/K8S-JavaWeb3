@@ -1,0 +1,9 @@
+version: WebAppCal-0.0.6
+ 
+server:
+  applicationConnectors:
+  - type: http
+    port: 80
+  adminConnectors:
+  - type: http
+    port: 80
