@@ -21,6 +21,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring.boot.version}</version>
         </dependency>
 
         <!-- JUnit 5 -->
@@ -60,7 +61,6 @@
         </plugins>
     </build>
 
-    <!-- Distribution Management for Nexus Repository -->
     <distributionManagement>
         <repository>
             <id>releases</id>
