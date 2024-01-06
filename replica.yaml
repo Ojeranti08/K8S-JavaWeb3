@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: K8S-JavaWeb3
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: K8S-JavaWeb3
+  template:
+    metadata:
+      labels:
+        app: K8S-JavaWeb3
+    spec:
+      containers:
+      - name: K8S-JavaWeb3-container
+        image: ojeranti08/K8S-JavaWeb3:latest
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            cpu: "0.5"  # Adjust as needed
+            memory: "512Mi"  # Adjust as needed
+          requests:
+            cpu: "0.2"  # Adjust as needed
+            memory: "256Mi"  # Adjust as needed
