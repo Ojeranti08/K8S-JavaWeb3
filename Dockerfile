@@ -9,7 +9,7 @@ COPY target/WebAppCal-0.0.6.war /home/centos/K8S-JavaWeb3/app.jar
 # Add Kubernetes configuration files
 ADD k8s-javaweb3-service.yaml app-config.yaml
 
-EXPOSE 8080
+EXPOSE 80
 
 # Command to run the application
 # Set the entry point
