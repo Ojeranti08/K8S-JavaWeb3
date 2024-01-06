@@ -16,7 +16,7 @@ spec:
       - name: k8s-javaweb3-container
         image: ojeranti08/k8s-javaweb3:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         resources:
           limits:
             cpu: "0.5"
@@ -27,7 +27,7 @@ spec:
         livenessProbe:
           httpGet:
             path: /healthcheck
-            port: 8085
+            port: 80
           initialDelaySeconds: 30
           timeoutSeconds: 1
 
@@ -44,6 +44,6 @@ spec:
     app: k8s-javaweb3
   ports:
   - protocol: TCP
-    port: 8080
-    targetPort: 8080
+    port: 80
+    targetPort: 80
     name: http

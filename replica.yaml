@@ -16,7 +16,7 @@ spec:
       - name:  k8s-javaweb3-container
         image: ojeranti08/k8s-javaweb3:latest
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         resources:
           limits:
             cpu: "0.5"  # Adjust as needed
