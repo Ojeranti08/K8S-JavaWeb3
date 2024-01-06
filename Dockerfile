@@ -1,4 +1,4 @@
-FROM openjdk:11.0.21-jre
+FROM openjdk:11
 
 # Copy JAR file into the image
 COPY target/WEB-INF/lib/servlet-api-2.5.jar /home/centos/K8S-JavaWeb3
