@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<<<<<<< HEAD
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.web.cal</groupId>
@@ -29,7 +30,36 @@
             <version>2.5</version>
         </dependency>
     </dependencies>
+=======
+>>>>>>> 209b96727a75d13f03bd5fba580eef51574ba5a9
 
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.web.cal</groupId>
+    <artifactId>WebAppCal</artifactId>
+    <packaging>war</packaging>
+    <version>0.0.6</version>
+    <name>WebAppCal Maven Webapp</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -50,6 +80,10 @@
             </plugin>
         </plugins>
     </build>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 209b96727a75d13f03bd5fba580eef51574ba5a9
     <distributionManagement>
         <repository>
             <id>releases</id>
@@ -57,4 +91,7 @@
         </repository>
     </distributionManagement>
 </project>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 209b96727a75d13f03bd5fba580eef51574ba5a9
