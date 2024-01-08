@@ -2,6 +2,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.web.cal</groupId>
@@ -33,6 +34,8 @@
 =======
 >>>>>>> 209b96727a75d13f03bd5fba580eef51574ba5a9
 
+=======
+>>>>>>> b37355c7501497b9b98697e487692433820a31ab
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.web.cal</groupId>
     <artifactId>WebAppCal</artifactId>
