@@ -5,11 +5,11 @@ metadata:
   labels:
     app: k8s-javaweb3
 spec:
-  type: NodePort
+  type: ClusterIP
   selector:
     app: k8s-javaweb3
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 80
-    name: http
+    port: 8080
+    targetPort: 8080
+    name: httpd
