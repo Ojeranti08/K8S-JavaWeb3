@@ -10,10 +10,10 @@ spec:
   template:
     metadata:
       labels:
-        app: k8s-javaweb3
+        app: k8s-javaweb3-nexus
     spec:
       containers:
-      - name: nexus
+      - name: nexus-container
         image: binary-nexus
         ports:
         - containerPort: 8081
