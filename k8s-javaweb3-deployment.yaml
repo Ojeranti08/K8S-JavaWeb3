@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nexus
-        image: ojeranti08/k8s-javaweb3:latest
+        image: binary-nexus
         ports:
         - containerPort: 8081
         resources:
