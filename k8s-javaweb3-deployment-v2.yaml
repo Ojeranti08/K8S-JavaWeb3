@@ -30,3 +30,10 @@ spec:
             port: 8081
           initialDelaySeconds: 30
           timeoutSeconds: 2
+    volumeMounts:
+    - name: registry-secret-volume
+      mountPath: /etc/docker/certs.d/https://hub.docker.com/repositories/ojeranti08
+volumes:
+- name: registry-secret-volume
+  secret:
+    secretName: my-registry-secret
