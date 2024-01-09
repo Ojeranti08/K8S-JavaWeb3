@@ -4,7 +4,7 @@ metadata:
   name: k8s-javaweb3-pod
 spec:
   containers:
-  - name: web
+  - name: apache
     image: httpd
     ports:
     - containerPort: 80

@@ -6,7 +6,7 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: k8s-javaweb3
+      app: k8s-javaweb3-nexus
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
       - name: k8s-javaweb3-container
         image: ojeranti08/k8s-javaweb3:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8081
         resources:
           limits:
             cpu: "0.5"
@@ -27,6 +27,6 @@ spec:
         livenessProbe:
           httpGet:
             path: /healthcheck
-            port: 80
+            port: 8081
           initialDelaySeconds: 30
           timeoutSeconds: 2
