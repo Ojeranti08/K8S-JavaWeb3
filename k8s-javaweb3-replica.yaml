@@ -1,7 +1,7 @@
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Replica
 metadata:
-  name: k8s-javaweb3
+  name: k8s-javaweb3-replica
 spec:
   replicas: 2
   selector:

@@ -7,7 +7,7 @@ WORKDIR /home/centos/K8S-JavaWeb3
 COPY target/WebAppCal-0.0.6.war /home/centos/K8S-JavaWeb3/app.jar
 
 # Add Kubernetes configuration files
-ADD k8s-javaweb3-service.yaml  app-config.yaml
+ADD k8s-javaweb3-deployment.yaml  app-config.yaml
 
 EXPOSE 80
 
