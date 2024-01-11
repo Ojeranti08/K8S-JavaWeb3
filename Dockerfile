@@ -47,5 +47,5 @@ FROM httpd
 #COPY tag is used for copying into image
 COPY /usr/local/apache2/htdocs .
 
-# Expose Nexus and Tomcat ports
+# Expose Apache and Tomcat ports
 EXPOSE 80 8080
