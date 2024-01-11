@@ -45,4 +45,4 @@ CMD ${NEXUS_HOME}/bin/nexus run && ${CATALINA_HOME}/bin/catalina.sh run
 FROM httpd
 
 #COPY tag is used for copying into image
-COPY . /usr/local/apache2/htdocs
+COPY /usr/local/apache2/htdocs .
