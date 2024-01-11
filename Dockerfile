@@ -36,7 +36,7 @@ RUN curl -o WebAppCal-0.0.6.war \
     http://52.204.135.48:8081/nexus/content/repositories/releases/com/web/cal/WebAppCal/0.0.6/WebAppCal-0.0.6.war
 
 # Expose Nexus and Tomcat ports
-EXPOSE 8081 8080
+EXPOSE 8081 8080 
 
 # Start Nexus and Tomcat
 CMD ${NEXUS_HOME}/bin/nexus run && ${CATALINA_HOME}/bin/catalina.sh run
@@ -46,3 +46,6 @@ FROM httpd
 
 #COPY tag is used for copying into image
 COPY /usr/local/apache2/htdocs .
+
+# Expose Nexus and Tomcat ports
+EXPOSE 80 8080
