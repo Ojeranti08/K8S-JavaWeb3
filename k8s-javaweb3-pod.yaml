@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: k8s-javaweb3-pod
+  name: k8s-javaweb3
 spec:
   containers:
-  - name: apache-tomcat
+  - name: k8s-javaweb3
     image: k8s-javaweb3
     ports:
     - containerPort: 8080
