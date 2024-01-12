@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: k8s-javaweb3-replica
+  name: k8s-javaweb3
 spec:
   replicas: 2
   selector:
@@ -13,7 +13,7 @@ spec:
         app:  k8s-javaweb3
     spec:
       containers:
-      - name:  k8s-javaweb3-container
+      - name:  k8s-javaweb3
         image: ojeranti08/k8s-javaweb3:latest
         ports:
         - containerPort: 8080

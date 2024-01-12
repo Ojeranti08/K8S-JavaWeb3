@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-javaweb3-deployment-v2
+  name: k8s-javaweb3
   labels:
     app: k8s-javaweb3
 spec:
@@ -15,14 +15,7 @@ spec:
         app: k8s-javaweb3
   spec:
       containers:
-      - name: nexus-container
+      - name: k8s-javaweb3
         image: ojeranti08/k8s-javaweb3:latest
         ports:
         - containerPort: 8080
-  volumemounts:
-    - name: registry-secret-volume
-      mountPath: /etc/docker/certs.d/https://hub.docker.com/repositories/ojeranti08
-volumes:
-- name: registry-secret-volume
-  secret:
-    secretName: my-registry-secret
