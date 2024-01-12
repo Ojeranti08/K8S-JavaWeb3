@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
   - name: apache-tomcat
-    image: httpd
+    image: k8s-javaweb3
     ports:
     - containerPort: 8080
     resources:
