@@ -8,11 +8,11 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: k8s-javaweb3-nexus
+      app: k8s-javaweb3
   template:
     metadata:
       labels:
-        app: k8s-javaweb3-nexus
+        app: k8s-javaweb3
   spec:
       containers:
       - name: nexus-container
