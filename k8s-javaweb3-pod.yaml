@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Pod
 metadata:
   name: k8s-javaweb3-pod
@@ -8,4 +8,3 @@ containers:
     image: ojeranti08/k8s-javaweb3:latest
     ports:
     - containerPort: 8080
-
