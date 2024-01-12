@@ -16,6 +16,7 @@ RUN mvn package
 
 # Use an official Tomcat runtime as the base image
 FROM tomcat:9.0-jdk11-openjdk-slim
+COPY target/*.war /usr/local/tomcat/webapps/
 
 # Set the working directory to the Tomcat webapps directory
 WORKDIR /usr/local/tomcat/webapps
@@ -32,8 +33,8 @@ ENV NEXUS_VERSION 3.38.0-01
 ENV NEXUS_HOME /opt/sonatype/nexus
 
 # Download the WAR file from Nexus and deploy it to Tomcat
-RUN curl -o WebAppCal-0.0.6.war \
-    http://52.204.135.48:8081/nexus/content/repositories/releases/com/web/cal/WebAppCal/0.0.6/WebAppCal-0.0.6.war
+#RUN curl -o WebAppCal-0.0.6.war \
+  #  http://52.204.135.48:8081/nexus/content/repositories/releases/com/web/cal/WebAppCal/0.0.6/WebAppCal-0.0.6.war
 
 # Expose Nexus, Apache and Tomcat ports
 EXPOSE 8081 80 8080 

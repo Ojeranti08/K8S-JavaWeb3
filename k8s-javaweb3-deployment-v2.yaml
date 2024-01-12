@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: k8s-javaweb3-deployment-v2
+  labels:
+    app: k8s-javaweb3
 spec:
   replicas: 2
   selector:
@@ -11,26 +13,13 @@ spec:
     metadata:
       labels:
         app: k8s-javaweb3-nexus
-    spec:
+  spec:
       containers:
       - name: nexus-container
-        image: binary-nexus
+        image: ojeranti08/k8s-javaweb3:latest
         ports:
-        - containerPort: 8081
-        resources:
-          limits:
-            cpu: "0.5"
-            memory: "512Mi"
-          requests:
-            cpu: "0.2"
-            memory: "256Mi"
-        livenessProbe:
-          httpGet:
-            path: /healthcheck
-            port: 8081
-          initialDelaySeconds: 30
-          timeoutSeconds: 2
-    volumeMounts:
+        - containerPort: 8080
+  volumemounts:
     - name: registry-secret-volume
       mountPath: /etc/docker/certs.d/https://hub.docker.com/repositories/ojeranti08
 volumes:
