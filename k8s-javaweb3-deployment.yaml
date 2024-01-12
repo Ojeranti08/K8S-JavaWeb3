@@ -14,7 +14,7 @@ spec:
       labels:
         app: k8s-javaweb3
   spec:
-      containers:
+    containers:
       - name: k8s-javaweb3
         image: ojeranti08/k8s-javaweb3:latest
         ports:
