@@ -8,4 +8,3 @@ containers:
     image: ojeranti08/k8s-javaweb3:latest
     ports:
     - containerPort: 8080
-
