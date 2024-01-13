@@ -20,6 +20,7 @@ spec:
          ports:
          - containerPort: 8080
            resources:
-           limits:
-           cpu: "0.5"  # Adjust the CPU limit based on your application's needs
-           memory: "512Mi"  # Adjust the memory limit based on your application's needs
+             limits:
+               cpu: "0.5"  # Adjust the CPU limit based on your application's needs
+             requests:
+             memory: "512Mi"  # Adjust the memory limit based on your application's needs
