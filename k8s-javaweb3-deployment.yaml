@@ -8,14 +8,18 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: k8s-javaweb3
+      app:  k8s-javaweb3
   template:
     metadata:
       labels:
-        app: k8s-javaweb3
+        app:  k8s-javaweb3
     spec:
       containers:
-      - name: k8s-javaweb3
-        image: ojeranti08/k8s-javaweb3:latest
-        ports:
-        - containerPort: 8080
+       - name: k8s-javaweb3
+         image: ojeranti08/k8s-javaweb3:latest
+         ports:
+         - containerPort: 8080
+           resources:
+           limits:
+           cpu: "0.5"  # Adjust the CPU limit based on your application's needs
+           memory: "512Mi"  # Adjust the memory limit based on your application's needs
