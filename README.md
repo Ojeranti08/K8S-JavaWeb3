@@ -1,0 +1,1 @@
+This is a JavaWeb- Calculator Project, using Tomcat to display on web browser, Maven for building to get the War files, Docker to build and push it to Docker Registry, and Kubernetes to manage docker containers.
