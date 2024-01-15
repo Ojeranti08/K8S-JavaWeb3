@@ -1,19 +1,21 @@
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: k8s-javaweb3
+  name: javaweb-calculator
+  labels:
+    app: javaweb-calculator
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app:  k8s-javaweb3
+      app: javaweb-calculator
   template:
     metadata:
       labels:
-        app:  k8s-javaweb3
+        app: javaweb-calculator
     spec:
       containers:
-      - name:  k8s-javaweb3
-        image: ojeranti08/k8s-javaweb3:latest
+      - name: javaweb-calculator
+        image: ojeranti08/k8s-javaweb-calculator:latest
         ports:
         - containerPort: 8080

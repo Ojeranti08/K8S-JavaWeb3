@@ -1,6 +1,0 @@
-apiVersion: v1
-kind: Secret
-metadata:
-  name: registry-secret
-data:
-  .dockerconfigjson: <base64-encoded-docker-config-json>

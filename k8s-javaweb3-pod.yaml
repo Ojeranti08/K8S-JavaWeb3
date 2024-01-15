@@ -1,17 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: k8s-javaweb3
-spec:
-  containers:
-  - name: k8s-javaweb3
-    image: k8s-javaweb3
-    ports:
-    - containerPort: 8080
-    resources:
-      limits:
-        cpu: "0.5"
-        memory: "512Mi"
-      requests:
-        cpu: "0.2"
-        memory: "256Mi"
+  name: javaweb-calculator
+  spec:
+   containers:
+      - name: javaweb-calculator
+        image: ojeranti08/k8s-javaweb-calculator:latest
+        ports:
+        - containerPort: 8080
